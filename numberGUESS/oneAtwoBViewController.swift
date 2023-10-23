@@ -105,7 +105,7 @@ class oneAtwoBViewController: UIViewController {
         for _ in 0...3 {
             var randomNumber = Int.random(in: 0...9)
             
-            // 如果數字已在password中則再隨機選取一次
+            // 如果數字已在陣列中則再隨機選取一次
             while gameNumber.contains(randomNumber) {
                 randomNumber = Int.random(in: 0...9)
             }
