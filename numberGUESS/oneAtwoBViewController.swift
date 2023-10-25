@@ -52,7 +52,7 @@ class oneAtwoBViewController: UIViewController {
         }
         
         // 將按過的數字按鈕關掉
-        if DisplayedNumbersLabels[index].text!.contains(String(sender.tag)){
+        if DisplayedNumbersLabels[index].text!.contains(sender.tag.description){
             sender.isEnabled = false
         }
     }

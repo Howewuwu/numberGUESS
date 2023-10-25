@@ -14,6 +14,7 @@
 		9C82A3AA2AE405AD00031A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C82A3A92AE405AD00031A21 /* Assets.xcassets */; };
 		9C82A3AD2AE405AD00031A21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C82A3AB2AE405AD00031A21 /* LaunchScreen.storyboard */; };
 		9CABA7162AE433A800C82724 /* oneAtwoBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CABA7152AE433A800C82724 /* oneAtwoBViewController.swift */; };
+		9CABA7182AE80B4900C82724 /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CABA7172AE80B4900C82724 /* GuessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9C82A3AC2AE405AD00031A21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C82A3AE2AE405AD00031A21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CABA7152AE433A800C82724 /* oneAtwoBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oneAtwoBViewController.swift; sourceTree = "<group>"; };
+		9CABA7172AE80B4900C82724 /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9C82A3A22AE405AB00031A21 /* SceneDelegate.swift */,
 				9C82A3A42AE405AB00031A21 /* ViewController.swift */,
 				9CABA7152AE433A800C82724 /* oneAtwoBViewController.swift */,
+				9CABA7172AE80B4900C82724 /* GuessViewController.swift */,
 				9C82A3A92AE405AD00031A21 /* Assets.xcassets */,
 				9C82A3AB2AE405AD00031A21 /* LaunchScreen.storyboard */,
 				9C82A3AE2AE405AD00031A21 /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C82A3A52AE405AB00031A21 /* ViewController.swift in Sources */,
+				9CABA7182AE80B4900C82724 /* GuessViewController.swift in Sources */,
 				9CABA7162AE433A800C82724 /* oneAtwoBViewController.swift in Sources */,
 				9C82A3A12AE405AB00031A21 /* AppDelegate.swift in Sources */,
 				9C82A3A32AE405AB00031A21 /* SceneDelegate.swift in Sources */,

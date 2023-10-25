@@ -35,13 +35,35 @@
                                     <segue destination="1x2-yv-xef" kind="show" id="FAv-Rj-z0q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St8-BW-IqN">
+                                <rect key="frame" x="93.666666666666671" y="292" width="187.66666666666663" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="1A2B">
+                                    <color key="titleColor" systemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Guess Number" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="cGY-Yb-9fN" kind="show" id="z3l-Kh-ZGe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="St8-BW-IqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="88o-wO-V3x"/>
                             <constraint firstItem="uNS-LV-qyD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="Aa3-hZ-LGF"/>
+                            <constraint firstItem="St8-BW-IqN" firstAttribute="width" secondItem="uNS-LV-qyD" secondAttribute="width" id="NvG-Bi-9V1"/>
                             <constraint firstItem="uNS-LV-qyD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a9A-Q3-UJO"/>
+                            <constraint firstItem="St8-BW-IqN" firstAttribute="height" secondItem="uNS-LV-qyD" secondAttribute="height" id="ct2-KF-wPi"/>
                             <constraint firstItem="uNS-LV-qyD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="dmF-cp-18Y"/>
+                            <constraint firstItem="St8-BW-IqN" firstAttribute="top" secondItem="uNS-LV-qyD" secondAttribute="bottom" constant="59" id="rD6-Qt-IOf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mqB-V7-MSJ"/>
@@ -49,6 +71,118 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3780" y="3.6945812807881775"/>
+        </scene>
+        <!--Guess View Controller-->
+        <scene sceneID="zXz-3n-tio">
+            <objects>
+                <viewController id="cGY-Yb-9fN" customClass="GuessViewController" customModule="numberGUESS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HWh-YD-xMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ftP-ke-00p">
+                                <rect key="frame" x="15" y="94" width="345" height="284"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XX" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDG-WQ-Ydx">
+                                        <rect key="frame" x="132.66666666666666" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="g3f-N6-TGB"/>
+                                            <constraint firstAttribute="width" constant="80" id="jsd-eS-06B"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Gje-mh-Lfm">
+                                        <rect key="frame" x="86" y="100" width="173" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="paN-Aj-zNk">
+                                                <rect key="frame" x="0.0" y="2.9999999999999982" width="19.666666666666668" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-1K-gYe">
+                                                <rect key="frame" x="30.666666666666657" y="2.9999999999999982" width="19.666666666666671" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-Tj-yy6">
+                                                <rect key="frame" x="61.333333333333336" y="2.9999999999999982" width="19.666666666666664" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NG6-w7-4tE">
+                                                <rect key="frame" x="92" y="2.9999999999999982" width="19.666666666666671" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EXu-EZ-oLe">
+                                                <rect key="frame" x="122.66666666666667" y="2.9999999999999982" width="19.666666666666671" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hQ8-r1-gZv">
+                                                <rect key="frame" x="153.33333333333334" y="2.9999999999999982" width="19.666666666666657" height="19"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請輸入 1 ~ 99 之間的數字" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-LI-rTN">
+                                        <rect key="frame" x="0.0" y="144" width="345" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xEz-aQ-JZo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTu-ik-aTB">
+                                        <rect key="frame" x="137.66666666666666" y="214" width="70" height="70"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cTu-ik-aTB" secondAttribute="height" id="jL3-Gi-JlM"/>
+                                            <constraint firstAttribute="height" constant="70" id="kg9-Wn-OBx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="GO">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="compareGO:" destination="cGY-Yb-9fN" eventType="touchUpInside" id="BB0-ZN-71e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="m4n-LI-rTN" secondAttribute="trailing" id="ZFG-jr-q1m"/>
+                                    <constraint firstItem="m4n-LI-rTN" firstAttribute="leading" secondItem="ftP-ke-00p" secondAttribute="leading" id="cqX-qq-Ace"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PRZ-1d-hNy"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PRZ-1d-hNy" firstAttribute="bottom" secondItem="ftP-ke-00p" secondAttribute="bottom" constant="400" id="7P2-lM-vkW"/>
+                            <constraint firstItem="ftP-ke-00p" firstAttribute="centerX" secondItem="HWh-YD-xMB" secondAttribute="centerX" id="bQV-ra-NSh"/>
+                            <constraint firstItem="ftP-ke-00p" firstAttribute="leading" secondItem="PRZ-1d-hNy" secondAttribute="leading" constant="15" id="dGC-Nu-jPW"/>
+                            <constraint firstItem="ftP-ke-00p" firstAttribute="top" secondItem="PRZ-1d-hNy" secondAttribute="top" id="nQ2-NN-yS8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="83O-Lc-W5L"/>
+                    <connections>
+                        <outlet property="announcementsLabel" destination="m4n-LI-rTN" id="nfQ-vV-B5u"/>
+                        <outlet property="compareButtonOutlet" destination="cTu-ik-aTB" id="asY-jP-x6e"/>
+                        <outlet property="inputNumberTextField" destination="bDG-WQ-Ydx" id="fQ7-yg-cY5"/>
+                        <outletCollection property="chancePointsImageViews" destination="paN-Aj-zNk" collectionClass="NSMutableArray" id="08e-Jr-4oO"/>
+                        <outletCollection property="chancePointsImageViews" destination="Nf8-1K-gYe" collectionClass="NSMutableArray" id="n4t-hZ-uKy"/>
+                        <outletCollection property="chancePointsImageViews" destination="vfW-Tj-yy6" collectionClass="NSMutableArray" id="aaZ-DV-q88"/>
+                        <outletCollection property="chancePointsImageViews" destination="NG6-w7-4tE" collectionClass="NSMutableArray" id="FiT-iY-VE0"/>
+                        <outletCollection property="chancePointsImageViews" destination="EXu-EZ-oLe" collectionClass="NSMutableArray" id="26n-3s-FbG"/>
+                        <outletCollection property="chancePointsImageViews" destination="hQ8-r1-gZv" collectionClass="NSMutableArray" id="Qaj-o0-fEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmW-QN-T2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4744.8000000000002" y="269.70443349753697"/>
         </scene>
         <!--One AtwoB View Controller-->
         <scene sceneID="4Qs-KR-4A7">
@@ -547,6 +681,9 @@
         <image name="delete.left.fill" catalog="system" width="128" height="102"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
